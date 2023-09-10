@@ -3,7 +3,7 @@ name = "enforcer_backend"
 version = "0.1.0"
 edition = "2021"
 description = "backend for enforcer app"
-license = "GPL-3"
+license = "GPL-3-only"
 [build]
 rustc-wrapper="/home/user/.cargo/bin/sccache"
 
