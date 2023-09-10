@@ -27,7 +27,7 @@ impl<'a> ProcessIterator {
         }
     }
 
-    pub(crate) fn iterate(&mut self, model: &'a mut Model) {
+    pub(crate) fn xiterate(&mut self, model: &'a mut Model) {
         if let Ok(_) = model.load() {
             if let Ok(processes) = processes() {
                 for process in &processes {
