@@ -20,14 +20,14 @@ pub struct ProcessIterator {
 }
 
 impl<'a> ProcessIterator {
-    pub(crate) fn new(processes: Vec<Result<Process, PProcessError>>) -> Self {
+    pub fn new(processes: Vec<Result<Process, PProcessError>>) -> Self {
         ProcessIterator {
             processes,
             index: 0,
         }
     }
 
-    pub(crate) fn iterate(&mut self, model: &'a mut Model) {
+    pub fn iterate(&mut self, model: &'a mut Model) {
         if let Ok(_) = model.load() {
             if let Ok(processes) = processes() {
                 for process in &processes {

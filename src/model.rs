@@ -30,14 +30,14 @@ impl RuleSet {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub(crate) struct Item {
+pub struct Item {
     pub name: String,
     pub rules: Vec<Rule>,
     pub state: bool,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub(crate) struct Model {
+pub struct Model {
     pub items: Vec<Item>,
 }
 

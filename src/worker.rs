@@ -9,7 +9,7 @@ use std::{
     time::Duration,
 };
 
-pub(crate) struct Worker {
+pub struct Worker {
     thread: Option<JoinHandle<()>>,
     state: Arc<AtomicBool>,
 }

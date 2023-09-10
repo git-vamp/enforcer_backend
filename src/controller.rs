@@ -2,7 +2,7 @@ use crate::error::ProjectError;
 use crate::model::{Item, Model, Rule}; // Make sure to adjust the import path to match your module structure
 
 #[allow(unused)]
-pub(crate) struct Controller {
+pub struct Controller {
     model: Model,
 }
 
