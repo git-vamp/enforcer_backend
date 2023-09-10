@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "name": "TestItem",
+      "rules": [
+        {
+          "path": "/path/to/some/process"
+        }
+      ],
+      "state": true
+    }
+  ]
+}
