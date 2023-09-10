@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 description = "backend for enforcer app"
 license = "GPL-3"
+[build]
+rustc-wrapper="sccache"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
