@@ -21,7 +21,7 @@ impl Controller {
             .create_item(name.parse().unwrap_or("".to_string()), rules, state)
     }
 
-    pub(crate) fn read_item(&self, name: &str) -> Option<&Item> {
+    fn read_item(&self, name: &str) -> Option<&Item> {
         self.model.read_item(name)
     }
 
